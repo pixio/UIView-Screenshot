@@ -1,0 +1,14 @@
+PODS:
+  - UIView-Screenshot (0.1.0)
+
+DEPENDENCIES:
+  - UIView-Screenshot (from `../`)
+
+EXTERNAL SOURCES:
+  UIView-Screenshot:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UIView-Screenshot: 2ad33df7f9c7e3e873ab976bf27744c74b07a320
+
+COCOAPODS: 0.36.3
