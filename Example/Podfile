@@ -1,4 +1,3 @@
-source 'git@git.pixio.com:pixio-libraries/specs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'UIView-Screenshot', :exclusive => true do
