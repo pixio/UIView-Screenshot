@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "UIView-Screenshot"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "Let's you screenshot views."
   s.description      = <<-DESC
                        Use the instance method -screenshot on any view or the UIView class method screenshotWholeWindow to screenshot the entire window.

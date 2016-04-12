@@ -43,10 +43,6 @@
             UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
             UIGraphicsEndImageContext();
             
-            // This was in here for some reason.  Not sure why, but it was breaking things.  Gone now
-//            NSData *imageData = UIImagePNGRepresentation(image);
-//            image = [UIImage imageWithData:imageData];
-            
             NSLog(@"Image   size: %@", NSStringFromCGSize([image size]));
             return image;
         }
@@ -60,13 +56,15 @@
     if (!ctx) {
         return nil;
     }
+    
+    if ([self isKindOfClass:[UIScrollView class]]) {
+        UIScrollView * scrollView = (id)self;
+        CGContextTranslateCTM(ctx, -scrollView.contentOffset.x, -scrollView.contentOffset.y);
+    }
+    
     [self.layer renderInContext:ctx];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    
-    // This was in here for some reason.  Not sure why, but it was breaking things.  Gone now
-//    NSData *imageData = UIImagePNGRepresentation(image);
-//    image = [UIImage imageWithData:imageData];
     
     return image;
 }
