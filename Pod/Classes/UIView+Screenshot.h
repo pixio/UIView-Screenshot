@@ -27,8 +27,8 @@
 
 @interface UIView (Screenshot)
 
-+ (UIImage*)screenshotWholeWindow;
++ (nullable UIImage*)screenshotWholeWindow;
 
-- (UIImage*)screenshot;
+- (nullable UIImage*)screenshot;
 
 @end
