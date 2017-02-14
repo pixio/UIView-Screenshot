@@ -1,11 +1,9 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'UIView-Screenshot', :exclusive => true do
+target 'UIView-Screenshot' do
   pod "UIView-Screenshot", :path => "../"
 end
 
-target 'Tests', :exclusive => true do
+target 'Tests' do
   pod "UIView-Screenshot", :path => "../"
-
-  
 end
